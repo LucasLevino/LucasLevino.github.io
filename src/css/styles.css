@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+
+    font-family: 'Roboto';
+    --cor-white-principal: #ECECEC;
+    --cor-black-principal: #000000;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+	background-color: var(--cor-white-principal);
+	color: var(--cor-black-principal);
+
+    overflow: hidden;
+    
+}
+
+section {
+
+    height: 100vh;
+
+}
+
+#inicio {
+
+    position: relative;
+
+}
+
+#sobre {
+
+    position: relative;
+
+}
+
+#contato {
+
+    position: relative;
+
+}
+
+
+.btn-bottom img {
+
+    width: 90px;
+    height: 90px;
+
+    float: right;
+    right: 40px;
+    bottom: 40px;
+
+    position: absolute;
+
+}
+
+br {
+    margin-bottom: 56px;
+}
+
+
+
+.subtitle {
+
+	font-size: 1.25em;
+	opacity: 0.65;
+
+}
+
+.card-block {
+
+	height: 250px;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 24px;
+	/* &:hover{
+		transform: translateY(-5px);
+		box-shadow: none;
+	} */
+}
+
+.card-1{
+	background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.card-2{
+	background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.card-3{
+	background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+
+.header {
+
+  background: var(--cor-white-principal);
+  border: 3px solid var(--cor-black-principal);
+
+  height: 100%;  
+
+  position: fixed;
+
+  z-index: 1;
+  padding: 0;
+  left: 0;
+  top: 0;
+
+}
+
+
+
+.content {
+
+  height: 100vh;
+  
+}
+
+.sticky {
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+}
+
+.sticky + .content {
+
+    padding-top: 102px;
+
+}
+
+.menu {
+
+    width: 100%;
+    padding: 0;
+
+}
+
+.menu-item {
+
+    padding: 24px 0;
+
+    font-size: 24px;
+    Font style: Regular;
+    line-height: 28px;
+    letter-spacing: 0em;
+
+    border-bottom: 3px solid var(--cor-black-principal);
+
+}
+
+.menu-item a{
+   
+    text-decoration: none;
+    color: var(--cor-black-principal);
+
+}
+
