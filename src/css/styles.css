@@ -129,12 +129,36 @@ header {
 
 }
 
+.slide:hover {
+
+    will-change: transform;
+
+}
+
 .slide li {
 
     flex-shrink: 0;
-    width: 80vw;
+    width: 50vw;
+    height: 50vw;
     max-width: 600px;
-    margin: 0 20px;
+    margin: 0 32px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+
+}
+
+.slide li.active {
+
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.slide-item {
+
+    height: 100%;
+    width:  100%;
 
 }
 
