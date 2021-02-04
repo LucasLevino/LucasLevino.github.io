@@ -13,10 +13,18 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+
 	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
+
+}
+
+ul {
+
+    list-style: none;
+
 }
 
 
@@ -103,3 +111,30 @@ header {
     fill: var(--cor-light-hover);
 
 }
+
+
+/* 
+    * Slide
+ */
+
+.slide-wrapper {
+
+    overflow: hidden;
+
+} 
+
+.slide {
+
+    display: flex;
+
+}
+
+.slide li {
+
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 600px;
+    margin: 0 20px;
+
+}
+
