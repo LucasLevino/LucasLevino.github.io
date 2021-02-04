@@ -93,6 +93,12 @@ header {
     
 }
 
+#about .container {
+
+    border-bottom: 3px solid var(--cor-light); 
+
+}
+
 /* 
  *  Footer
  *  - #contact   
@@ -125,11 +131,34 @@ header {
 *    - item-portfolio
 */
 
-/* .item-portfolio { */
+.item-portfolio { 
 
-    /* border-bottom: 3px solid var(--cor-light); */
+    padding-top: 120px;
+    margin-bottom: 80px;
+    height: 100vh;
 
-/* } */
+}
+
+.tag-title {
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 16px;
+    color: var(--cor-green);
+
+}
+
+
+.desc-body{
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+
 
 
 /* 
