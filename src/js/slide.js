@@ -14,7 +14,7 @@ export class Slide {
         
         }
         this.activeClass = 'active';
-
+        this.slide.style.transform = `translate3d(0, 0, 0)`;
 
     }
 

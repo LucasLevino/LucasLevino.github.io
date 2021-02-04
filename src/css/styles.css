@@ -34,7 +34,7 @@ ul {
     font-family: 'Barlow', sans-serif;
     --cor-light: #F2EFEA;
     --cor-light-hover: #D1CABE;
-    --cor-background: #332F38;
+    --cor-background: #151515;
     --cor-green: #9AFF1F;
 
     box-sizing: border-box;
@@ -76,7 +76,14 @@ header {
  *  - height   
  */
 
+.name{
 
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+
+}
 
 .text-desc {
 
@@ -114,12 +121,25 @@ header {
 
 
 /* 
+*   Portifolio
+*    - item-portfolio
+*/
+
+/* .item-portfolio { */
+
+    /* border-bottom: 3px solid var(--cor-light); */
+
+/* } */
+
+
+/* 
     * Slide
  */
 
 .slide-wrapper {
 
     overflow: hidden;
+    grid-column: 1 / -1;
 
 } 
 
@@ -135,12 +155,13 @@ header {
 
 }
 
-.slide li {
+.slide div{
 
     flex-shrink: 0;
-    width: 50vw;
-    height: 50vw;
-    max-width: 600px;
+    width: 100vw;
+    height: 100vw;
+    max-width: 1024px;
+    max-height: 720px;
     margin: 0 32px;
     opacity: .8;
     transform: scale(.8);
@@ -148,7 +169,7 @@ header {
 
 }
 
-.slide li.active {
+.slide div.active {
 
     opacity: 1;
     transform: scale(1);
@@ -162,3 +183,28 @@ header {
 
 }
 
+.arrow-nav {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0;
+
+}
+
+.arrow-nav button {
+
+    cursor: url('../../assets/cursor.cur'), pointer;
+
+    padding: 20px;
+    color: var(--cor-light);
+    border: none;
+    border-radius: 0px;
+    background: url('../../assets/arrow-right.svg') center center no-repeat;
+    
+}
+
+.arrow-nav button.prev {
+
+    transform: rotate(-180deg);
+
+}
