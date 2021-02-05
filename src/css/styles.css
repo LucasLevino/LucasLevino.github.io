@@ -36,6 +36,7 @@ ul {
     --cor-light-hover: #D1CABE;
     --cor-background: #151515;
     --cor-green: #9AFF1F;
+    --cor-green-dark: #81D31D;
 
     box-sizing: border-box;
 
@@ -104,6 +105,11 @@ header {
  *  - #contact   
  */
 
+#contact {
+    margin-top: 180px;
+
+
+}
 
 #contact .container {
 
@@ -131,10 +137,15 @@ header {
 *    - item-portfolio
 */
 
+#portifolio {
+
+    margin-bottom: 80px;
+
+}
+
 .item-portfolio { 
 
     padding-top: 120px;
-    margin-bottom: 80px;
     height: 100vh;
 
 }
@@ -149,7 +160,6 @@ header {
 
 }
 
-
 .desc-body{
 
     font-weight: normal;
@@ -158,7 +168,22 @@ header {
 
 }
 
+.especial-link {
 
+    text-decoration: none;
+    color: var(--cor-green);
+
+}
+
+.especial-link:hover {
+
+    color: var(--cor-green-dark);
+
+}
+
+.artist-credit{ 
+    margin-top: 32px;
+}
 
 
 /* 
@@ -184,33 +209,27 @@ header {
 
 }
 
-.slide div{
+.slide li{
 
     flex-shrink: 0;
     width: 100vw;
     height: 100vw;
     max-width: 1024px;
-    max-height: 720px;
-    margin: 0 32px;
+    max-height: 900px;
+    margin: 0 64px;
     opacity: .8;
     transform: scale(.8);
     transition: .4s;
 
 }
 
-.slide div.active {
+.slide li.active {
 
     opacity: 1;
     transform: scale(1);
 
 }
 
-.slide-item {
-
-    height: 100%;
-    width:  100%;
-
-}
 
 .arrow-nav {
 
@@ -243,3 +262,4 @@ a:hover {
     transform: rotate(-180deg);
 
 }
+
