@@ -220,6 +220,12 @@ header {
 
 }
 
+a:hover {
+
+    cursor: url('../../assets/cursor.cur'), pointer;
+
+}
+
 .arrow-nav button {
 
     cursor: url('../../assets/cursor.cur'), pointer;
