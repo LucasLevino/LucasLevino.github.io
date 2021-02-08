@@ -1,0 +1,153 @@
+@media (max-width: 576px) {
+
+   
+
+
+   .picture {
+ 
+      width: 100%;
+    
+   }
+
+
+   .about-me-info {
+ 
+      margin-top: 40px;
+      margin-bottom: 40px;
+ 
+   }
+
+
+   .text-about-body {
+ 
+      margin-bottom: 64px;
+
+   }   
+
+
+   .github-body {
+   
+      margin-bottom: 80px;
+
+   }
+
+
+}
+
+@media (max-width: 768px) {
+
+   h4 {
+
+      font-size: 22px;
+      line-height: 32px;
+      letter-spacing: 0.1em;
+
+   }
+
+
+   .about-hello h3 {
+ 
+      display: none;
+    
+   }
+
+
+   #hello-mobile {
+   
+      display: block;
+   
+   }
+
+
+   .picture {
+ 
+      width: 100%;
+    
+   }
+
+
+   .card-context-body {
+ 
+      padding: 0px 40px;
+ 
+   }
+
+
+   .contact-info {
+   
+      padding: 80px 0px;
+   
+   }
+
+
+   .list-info li{
+ 
+      font-size: 16px;
+      margin-bottom: 24px;
+
+   }
+
+
+   .text-about-body {
+ 
+      padding: 0px 0px;
+      font-size: 18px;
+      line-height: 28px;
+
+   }  
+
+}
+
+@media (max-width: 992px) {
+
+
+
+}
+
+@media (max-width: 1200px) {
+
+   .picture {
+   
+      width: 100%;
+      
+   }
+
+
+   .about-hello {
+   
+      padding-right: 40px;
+      margin-top: -64px;
+      
+   }
+
+
+   .text-about-body {
+ 
+      padding: 0px 24px;
+
+   }  
+
+
+   .about-hello h3 {
+ 
+      font-size: 26px;
+      letter-spacing: 0.15em;
+
+   }   
+
+
+   .text-about-body {
+ 
+      font-size: 18px;
+      line-height: 28px;
+
+   }   
+
+}
+
+@media (max-width: 1400px) {
+
+
+ 
+}
+

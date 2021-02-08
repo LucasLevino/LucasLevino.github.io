@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+
+* {
+
+
+    font-family: 'Barlow', sans-serif;
+    --cor-light: #F2EFEA;
+    --cor-light-hover: #D1CABE;
+    --cor-background: #151515;
+    --cor-green: #9AFF1F;
+    --cor-green-dark: #81D31D;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+	background-color: var(--cor-background);
+	color: var(--cor-light);
+
+    /* overflow: hidden; */
+    
+}
+
+h4 {
+
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+h4 span {
+
+    margin: 0 8px;
+    color: var(--cor-green);
+
+}
+
+header {
+
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+/* 
+ *  Section About-Me
+ *  - height   
+ */
+
+.name{
+
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+
+}
+
+.text-desc {
+
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    
+}
+
+#about .container {
+
+    border-bottom: 3px solid var(--cor-light); 
+
+}
+
+/* 
+ *  Footer
+ *  - #contact   
+ */
+
+#contact {
+    margin-top: 180px;
+
+
+}
+
+#contact .container {
+
+    border-top: 3px solid var(--cor-light);
+    padding-top: 180px;
+    padding-bottom: 90px;
+
+}
+
+#github-svg path{
+
+    fill: var(--cor-light);
+
+}
+
+#github-svg path:hover{
+
+    fill: var(--cor-light-hover);
+
+}
+
+
+/* 
+*   Portifolio
+*    - item-portfolio
+*/
+
+#portifolio {
+
+    margin-bottom: 80px;
+
+}
+
+.item-portfolio { 
+
+    padding-top: 120px;
+    height: 100vh;
+
+}
+
+.tag-title {
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 16px;
+    color: var(--cor-green);
+
+}
+
+.desc-body{
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+.especial-link {
+
+    text-decoration: none;
+    color: var(--cor-green);
+
+}
+
+.especial-link:hover {
+
+    color: var(--cor-green-dark);
+
+}
+
+.artist-credit{ 
+    margin-top: 32px;
+}
+
+
+/* 
+    * Slide
+ */
+
+.slide-wrapper {
+
+    overflow: hidden;
+    grid-column: 1 / -1;
+
+} 
+
+.slide {
+
+    display: flex;
+
+}
+
+.slide:hover {
+
+    will-change: transform;
+
+}
+
+.slide li{
+
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vw;
+    max-width: 1024px;
+    max-height: 900px;
+    margin: 0 64px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+
+}
+
+.slide li.active {
+
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+
+.arrow-nav {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0;
+
+}
+
+a:hover {
+
+    cursor: url('../../assets/cursor.cur'), pointer;
+
+}
+
+.arrow-nav button {
+
+    cursor: url('../../assets/cursor.cur'), pointer;
+
+    padding: 20px;
+    color: var(--cor-light);
+    border: none;
+    border-radius: 0px;
+    background: url('../../assets/arrow-right.svg') center center no-repeat;
+    
+}
+
+.arrow-nav button.prev {
+
+    transform: rotate(-180deg);
+
+}
+
