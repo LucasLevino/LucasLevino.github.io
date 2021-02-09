@@ -72,6 +72,12 @@
  
    }
 
+   .project-body {
+   
+      padding: 40px 40px;
+
+   }
+
 
    .contact-info {
    
@@ -91,8 +97,6 @@
    .text-about-body {
  
       padding: 0px 0px;
-      font-size: 18px;
-      line-height: 28px;
 
    }  
 
