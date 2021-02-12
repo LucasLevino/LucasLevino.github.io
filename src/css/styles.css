@@ -8,10 +8,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  cursor: url("../assets/cursor.cur"), pointer;
 }
 
 body {
-  cursor: url("../assets/cursor.cur"), pointer;
   color: #151515;
   background-color: #151515;
 }
