@@ -44,9 +44,9 @@ a {
 
     &:hover {
     
-        cursor: url('../assets/cursor-hover.cur'), pointer;
+        cursor: url('../assets/cursor-hover.cur'), pointer !important;
 
-        color: $color-dark-hover;
+        color: $color-green-dark;
     
     }
 

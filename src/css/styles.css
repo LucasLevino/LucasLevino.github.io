@@ -26,8 +26,8 @@ a {
 }
 
 a:hover {
-  cursor: url("../assets/cursor-hover.cur"), pointer;
-  color: #000000;
+  cursor: url("../assets/cursor-hover.cur"), pointer !important;
+  color: #81D31D;
 }
 
 h4 {
@@ -310,11 +310,12 @@ span {
   }
 }
 
-.contact-body #github-svg path {
+.contact-body #github-svg svg {
   fill: #151515;
 }
 
-.contact-body #github-svg path:hover {
-  fill: #000000;
+.contact-body #github-svg svg:hover {
+  cursor: url("../../assets/cursor-hover.cur"), pointer !important;
+  fill: #81D31D;
 }
 /*# sourceMappingURL=styles.css.map */
