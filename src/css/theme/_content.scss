@@ -1,0 +1,191 @@
+// Tag: Card 
+
+.card-context{
+
+    border-radius: 15px;
+
+    background: $color-light;
+    box-shadow: $shadow-dark;
+
+    .card-context-body {
+    
+        padding: 0px 80px;
+    
+    }
+
+}
+
+
+// Tag: Content 1 
+
+.about-hello {
+ 
+    padding-right: 300px;
+    margin-top: -64px;
+
+    h3 {
+ 
+        color: $color-light;
+        font-size: 32px;
+        letter-spacing: 0.15em;
+
+    }   
+    
+}
+
+.picture {
+ 
+    width: 80%;
+    margin-top: -200px;
+
+    img{
+    
+        border-radius: 15px;
+
+        box-shadow: $shadow;
+
+    }
+    
+}
+
+.about-me-info {
+ 
+    margin-top: 48px;
+    margin-bottom: 120px;
+
+    .list-about {
+ 
+        font-size: 22px;   
+
+        color: $color-dark;
+
+        li {
+ 
+            margin-bottom: 16px;
+ 
+        }
+
+    }
+ 
+} 
+
+.text-about-body {
+ 
+    padding: 0px 90px;
+
+    font-size: 22px;
+    line-height: 32px;
+
+    color: $color-dark;
+
+}
+
+
+// Tag: Content 2 
+
+.project-body {
+
+    padding: 80px 80px!important;
+
+    .title-project { 
+
+        h3 {
+
+            margin-bottom: 80px;
+
+        }
+
+    }
+
+    .project-tag {
+
+        margin-bottom: 16px;
+
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.15em;
+
+    }
+
+    .desc-project {
+
+        font-size: 16px;
+        line-height: 26px;
+
+    }
+
+    .divider {
+
+        margin: 72px 0px;
+
+    }
+
+    .artist-credit { 
+
+    margin-top: 32px;
+
+    }
+
+    .especial-link {
+
+        color: $color-dark;
+
+        &:hover {
+
+            color: $color-green-dark;
+
+        }
+
+    }
+
+}
+
+
+// Tag: Contact & Footer 
+
+.contact-body {
+
+    margin-bottom: 40px;
+
+    .contact-info {
+ 
+        padding: 100px 0px;
+ 
+    }
+
+    .title-contact {
+ 
+        margin-bottom: 16px;
+
+    }
+
+    .list-info {
+ 
+        margin-top: 24px;
+
+        li {
+ 
+            margin-bottom: 16px;
+
+            font-size: 20px;
+            
+            color: $color-dark;
+
+        }
+
+    } 
+
+    #github-svg path{
+
+        fill: $color-dark;
+
+        &:hover{
+
+            fill: $color-dark-hover;
+
+        }
+
+    }
+
+}
