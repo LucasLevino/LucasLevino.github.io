@@ -20,11 +20,6 @@ section {
   margin-bottom: 64px;
 }
 
-header {
-  margin-top: 48px;
-  margin-bottom: 288px;
-}
-
 a {
   text-decoration: none;
   color: #151515;
@@ -43,6 +38,14 @@ h4 {
   color: #151515;
 }
 
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+  }
+}
+
 h5 {
   font-weight: 400;
   font-size: 16px;
@@ -59,6 +62,47 @@ span {
   margin-bottom: 40px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2EFEA;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #151515;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+.head-box {
+  margin-top: 48px;
+  margin-bottom: 288px;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 424px) {
+  .head-box #head-bar {
+    display: none;
+  }
+}
+
+.head-box #head-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 424px) {
+  .head-box #head-mobile {
+    display: block;
+  }
+}
+
 .card-context {
   border-radius: 15px;
   background: #F2EFEA;
@@ -70,15 +114,41 @@ span {
   padding: 0px 80px;
 }
 
+@media screen and (max-width: 768px) {
+  .card-context .card-context-body {
+    padding: 0px 40px;
+  }
+}
+
 .about-hello {
   padding-right: 300px;
   margin-top: -64px;
 }
 
 .about-hello h3 {
-  color: #F2EFEA;
   font-size: 32px;
   letter-spacing: 0.15em;
+  color: #F2EFEA;
+}
+
+@media screen and (max-width: 768px) {
+  .about-hello h3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-hello h3 {
+    font-size: 26px;
+    letter-spacing: 0.15em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-hello {
+    padding-right: 40px;
+    margin-top: -64px;
+  }
 }
 
 .picture {
@@ -90,6 +160,12 @@ span {
   border-radius: 15px;
   -webkit-box-shadow: 0px 8px 16px rgba(21, 21, 21, 0.25);
           box-shadow: 0px 8px 16px rgba(21, 21, 21, 0.25);
+}
+
+@media screen and (max-width: 1200px) {
+  .picture {
+    width: 100%;
+  }
 }
 
 .about-me-info {
@@ -106,11 +182,48 @@ span {
   margin-bottom: 16px;
 }
 
+.about-me-info .list-about #hello-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-info .list-about #hello-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-me-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
 .text-about-body {
   padding: 0px 90px;
   font-size: 22px;
   line-height: 32px;
   color: #151515;
+}
+
+@media screen and (max-width: 576px) {
+  .text-about-body {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-about-body {
+    padding: 0px 0px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .text-about-body {
+    padding: 0px 24px;
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .project-body {
@@ -150,12 +263,24 @@ span {
   color: #81D31D;
 }
 
+@media screen and (max-width: 768px) {
+  .project-body {
+    padding: 40px 40px !important;
+  }
+}
+
 .contact-body {
   margin-bottom: 40px;
 }
 
 .contact-body .contact-info {
   padding: 100px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-body .contact-info {
+    padding: 80px 0px;
+  }
 }
 
 .contact-body .title-contact {
@@ -170,6 +295,19 @@ span {
   margin-bottom: 16px;
   font-size: 20px;
   color: #151515;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-body .list-info li {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-body .github-body {
+    margin-bottom: 80px;
+  }
 }
 
 .contact-body #github-svg path {

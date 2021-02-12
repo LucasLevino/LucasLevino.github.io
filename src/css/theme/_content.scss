@@ -1,3 +1,37 @@
+// Tag: Header 
+
+.head-box {
+
+    margin-top: 48px;
+    margin-bottom: 288px;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    #head-bar {
+
+        @include responsive-xsm() {
+        
+            display: none;
+            
+        }
+
+    }
+
+    #head-mobile {
+
+        display: none;
+
+        @include responsive-xsm() {
+        
+            display: block;
+            
+        }
+
+    }
+
+}
+
+
 // Tag: Card 
 
 .card-context{
@@ -10,6 +44,12 @@
     .card-context-body {
     
         padding: 0px 80px;
+
+        @include responsive-md() {
+    
+            padding: 0px 40px;
+        
+        }
     
     }
 
@@ -25,11 +65,32 @@
 
     h3 {
  
-        color: $color-light;
         font-size: 32px;
         letter-spacing: 0.15em;
 
-    }   
+        color: $color-light;
+
+        @include responsive-md() {
+    
+            display: none;
+        
+        }
+
+        @include responsive-lg() {
+    
+            font-size: 26px;
+            letter-spacing: 0.15em;
+        
+        }
+
+    }
+
+    @include responsive-lg() {
+    
+        padding-right: 40px;
+        margin-top: -64px;
+        
+    }
     
 }
 
@@ -44,6 +105,12 @@
 
         box-shadow: $shadow;
 
+    }
+
+    @include responsive-lg() {
+    
+        width: 100%;
+        
     }
     
 }
@@ -65,6 +132,25 @@
  
         }
 
+        #hello-mobile {
+   
+            display: none;
+
+            @include responsive-md() {
+    
+                display: block;
+        
+            }
+        
+        }
+
+    }
+
+    @include responsive-sm() {
+    
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
     }
  
 } 
@@ -77,6 +163,27 @@
     line-height: 32px;
 
     color: $color-dark;
+
+    @include responsive-sm() {
+    
+        margin-bottom: 64px;
+        
+    }
+
+    @include responsive-md() {
+    
+        padding: 0px 0px!important;
+        
+    }
+
+    @include responsive-lg() {
+    
+        padding: 0px 24px;
+
+        font-size: 18px;
+        line-height: 28px;
+        
+    }
 
 }
 
@@ -139,6 +246,12 @@
 
     }
 
+    @include responsive-md() {
+    
+        padding: 40px 40px!important;
+        
+    }
+
 }
 
 
@@ -151,7 +264,13 @@
     .contact-info {
  
         padding: 100px 0px;
- 
+
+        @include responsive-md() {
+    
+            padding: 80px 0px;
+        
+        }
+
     }
 
     .title-contact {
@@ -172,9 +291,26 @@
             
             color: $color-dark;
 
+            @include responsive-md() {
+    
+                font-size: 16px;
+                margin-bottom: 24px;
+        
+            }
+
         }
 
     } 
+
+    .github-body {
+
+        @include responsive-sm() {
+    
+            margin-bottom: 80px;
+        
+        }
+
+    }
 
     #github-svg path{
 

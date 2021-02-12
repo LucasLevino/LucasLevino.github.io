@@ -16,6 +16,7 @@
 }
 
 
+@import './theme/functions';
 @import './theme/colors';
 
 
@@ -31,13 +32,6 @@ body {
 section {
 
     margin-bottom: 64px;
-
-}
-
-header {
-
-    margin-top: 48px;
-    margin-bottom: 288px;
 
 }
 
@@ -65,6 +59,14 @@ h4 {
 
 	color: $color-dark;
 
+    @include responsive-md() {
+    
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 0.1em;
+        
+    }
+
 }
 
 h5 {
@@ -89,6 +91,34 @@ span {
     margin-bottom: 40px;
  
 }
+
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+    background: $color-light;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+    background: $color-dark; 
+
+    &:hover {
+
+        background: $color-dark-hover;
+
+    }
+
+}
+
 
 @import './theme/content';
 
