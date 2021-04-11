@@ -1,0 +1,31 @@
+[class^="sidebar-"] {
+	width: 300px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+[class^="name-"],
+[class^="channelName-"] {
+	color: color(secondary, 500);
+}
+
+/* Sidebar Icons */
+.iconContainer-1BBaeJ .icon-1DeIlz {
+	color: color(secondary, 500);
+}
+
+.sidebar-2K8pFh,
+.privateChannels-1nO12o,
+.container-3w7J-x,
+.chat-3bRxxu,
+.panels-j1Uci_,
+.scroller-1JbKMe {
+	background-color: transparent;
+}
+
+/* Right Sidebar */
+.members-1998pB,
+.members-1998pB > div {
+	background-color: transparent;
+}

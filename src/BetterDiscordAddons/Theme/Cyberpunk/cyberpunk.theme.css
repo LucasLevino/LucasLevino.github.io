@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=cyberpunk.theme.css.map */
+@charset "UTF-8";
+:root {
+  /* Colors */
+  --colors-primary-200: #f4908b;
+  --colors-primary-300: #ea6f69;
+  --colors-primary-500: #e8615a;
+  --colors-primary-600: #9c3230;
+  --colors-primary-700: #5e2122;
+  --colors-primary-800: #451717;
+  --colors-primary-900: #3c181a;
+  --colors-secondary-500: #2be4ea;
+  --colors-secondary-900: #295459;
+  --colors-tertiary-500: #fed33f;
+  --colors-bg-300: #1e181e;
+  --colors-bg-500: #191a1e;
+  /* Scrollbar */
+  --scrollbar-thin-thumb: var(--colors-secondary-900);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: var(--colors-secondary-900);
+  --scrollbar-auto-track: var(--colors-bg-500);
+  --scrollbar-auto-scrollbar-color-thumb: var(--colors-secondary-900);
+  --scrollbar-auto-scrollbar-color-track: var(--colors-bg-500);
+  /* Text */
+  --text-normal: var(--colors-primary-500);
+  --text-link: var(--colors-tertiary-500);
+  /* UI */
+  /*	╚> Glow */
+  --ui-glow: 0 0 5px var(--colors-primary-500);
+  --ui-glow-borders-500: 0 0 3px var(--colors-primary-500);
+  --ui-glow-color: currentcolor;
+  --ui-glow-text: -9px -6px 40px var(--ui-glow-color);
+  --ui-glow-text-dimmed: -9px -6px 40px var(--ui-glow-color);
+  /*	╚> Notch */
+  --ui-notch-amount: 1rem;
+  --ui-notch-hypotenuse: 22.627416px;
+  --ui-notch-path: polygon(
+		0 0, 100% 0, 100% calc(100% - var(--ui-notch-amount) + 2px),
+		calc(100% - var(--ui-notch-amount) + 2px) 100%, 0 100%
+	);
+}
+
+[class^="sidebar-"] {
+  width: 300px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+[class^="name-"],
+[class^="channelName-"] {
+  color: var(--colors-secondary-500);
+}
+
+/* Sidebar Icons */
+.iconContainer-1BBaeJ .icon-1DeIlz {
+  color: var(--colors-secondary-500);
+}
+
+.sidebar-2K8pFh,
+.privateChannels-1nO12o,
+.container-3w7J-x,
+.chat-3bRxxu,
+.panels-j1Uci_,
+.scroller-1JbKMe {
+  background-color: transparent;
+}
+
+/* Right Sidebar */
+.members-1998pB,
+.members-1998pB > div {
+  background-color: transparent;
+}
+
+.button-14-BFJ {
+  padding: 1rem 1.1rem;
+}
+
+.button-1YfofB.buttonColor-7qQbGO,
+.button-1YfofB .buttonColor-7qQbGO {
+  background-color: transparent;
+  border: 1px solid var(--colors-secondary-500);
+}
+
+/* Scrollbar */
+.thin-1ybCId::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: var(--ui-glow-color);
+          box-shadow: var(--ui-glow-color);
+}
+/*# sourceMappingURL=cyberpunk.theme.css.map */

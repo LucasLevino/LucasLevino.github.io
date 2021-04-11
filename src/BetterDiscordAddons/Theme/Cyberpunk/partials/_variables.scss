@@ -1,0 +1,40 @@
+@import "_colors.scss";
+
+:root {
+	/* Colors */
+	@each $name, $shades in $colors {
+		@each $group, $color, $shade in $shades {
+			--colors-#{$name}-#{$group}: #{$color};
+		}
+	}
+
+	/* Scrollbar */
+	--scrollbar-thin-thumb: var(--colors-secondary-900);
+	--scrollbar-thin-track: transparent;
+	--scrollbar-auto-thumb: var(--colors-secondary-900);
+	--scrollbar-auto-track: var(--colors-bg-500);
+	--scrollbar-auto-scrollbar-color-thumb: var(--colors-secondary-900);
+	--scrollbar-auto-scrollbar-color-track: var(--colors-bg-500);
+
+	/* Text */
+	--text-normal: var(--colors-primary-500);
+	--text-link: var(--colors-tertiary-500);
+
+	
+	/* UI */
+	/*	╚> Glow */
+	--ui-glow: 0 0 5px var(--colors-primary-500);
+	--ui-glow-borders-500: 0 0 3px var(--colors-primary-500);
+	--ui-glow-color: currentcolor;
+	--ui-glow-text: -9px -6px 40px var(--ui-glow-color);
+	--ui-glow-text-dimmed: -9px -6px 40px var(--ui-glow-color);
+
+	/*	╚> Notch */
+	--ui-notch-amount: 1rem;
+	--ui-notch-hypotenuse: 22.627416px;
+	--ui-notch-path: polygon(
+		0 0, 100% 0, 100% calc(100% - var(--ui-notch-amount) + 2px),
+		calc(100% - var(--ui-notch-amount) + 2px) 100%, 0 100%
+	);
+}
+
