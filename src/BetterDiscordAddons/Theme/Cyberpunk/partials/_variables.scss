@@ -1,4 +1,6 @@
 @import "_colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&amp;display=swap");
 
 :root {
 	/* Colors */
@@ -17,6 +19,8 @@
 	--scrollbar-auto-scrollbar-color-track: var(--colors-bg-500);
 
 	/* Text */
+	--fonts-primary: "Rajdhani", sans-serif;
+  	--fonts-secondary: "VT323", monospace;
 	--text-normal: var(--colors-primary-500);
 	--text-link: var(--colors-tertiary-500);
 

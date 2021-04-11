@@ -29,3 +29,56 @@
 .members-1998pB > div {
 	background-color: transparent;
 }
+
+.avatar-3uk_u9 .linkButtonIcon-Mlm5d6 {
+	color: color(secondary, 500);
+	@include glitch;
+}
+
+.header-2V-4Sw {
+	height: 60px;
+	color: color(secondary, 500);
+}
+
+/* 
+.childWrapper-anI2G9 {
+  color: var(--colors-secondary-500);
+}
+*/
+
+// Discord Home Button
+.childWrapper-anI2G9 {
+	background-color: transparent !important;
+	color: color(secondary, 500) !important;
+	@include glitch;
+}
+
+.childWrapper-anI2G9:hover {
+	color: color(secondary, 900) !important;
+}
+
+[class^="privateChannels-"] [class^="searchBar-"] {
+	height: 60px;
+}
+
+// Sidebar Searchbar
+[class^="searchBar-"] [class^="searchBarComponent-"] {
+	background-color: color(bg, 300);
+	border: 1px solid color(primary, 600);
+	clip-path: var(--ui-notch-path);
+	@include button-before;
+}
+
+
+[class^="sidebar-"] {
+	width: 300px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+
+.searchBarComponent-32dTOx {
+	@include button-before(3px, color(primary, 600));
+}
+

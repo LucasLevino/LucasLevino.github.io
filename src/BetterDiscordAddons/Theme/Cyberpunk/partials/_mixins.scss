@@ -1,0 +1,22 @@
+@mixin glitch() {
+	animation: logoglitch 2s linear 0.5s 1;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@mixin button-before($size: 4px, $color: currentcolor) {
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: var(--ui-notch-hypotenuse);
+		height: $size;
+		top: auto;
+		right: -6px;
+		bottom: 5px;
+		background-color: $color;
+		transform: rotate(-45deg);
+		z-index: 100;
+	}
+}
